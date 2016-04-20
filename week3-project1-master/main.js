@@ -152,7 +152,7 @@ var phoneNumberCleaner = function (phoneNumber) {
     return error;
   }
   }
-var a = '71234567890';
+var a = '12345678904';
 console.log(phoneNumberCleaner(a));
 // 13. Create a function that determines whether a parameter is a number or not.
 //     Iterate over the elements in the following array to determine if each is a number.
@@ -187,3 +187,23 @@ while(numberOfSpaces<41){
 }
 console.log("Total is "+numberOfSpaces);
 console.log(counter);
+var date = Date();
+console.log(date);
+
+
+debugger;
+var arrayOfNames = ['Bradley', 'Matt', 'Jenny']
+
+function sayHi (name) {
+console.log('Hi ' + name + ', how are you today?');
+}
+
+function allNames (array) {
+for(i=0; i<array.length; i++) {
+  sayHi (array[i]);
+};
+}
+
+allNames(arrayOfNames)
+
+console.log(allNames(arrayOfNames));

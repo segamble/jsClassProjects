@@ -243,7 +243,7 @@ for (i=1; i<101; i++) {
 // At each position of the grid there is either a space or a “#” character. The characters should form a chess board.
 console.log("Question 23");
 var chessBoard=["#"," "];
-var size = 2;
+var size = 14;
 var stringEven = chessBoard[0]+chessBoard[1];
 var stringOdd = chessBoard[1]+chessBoard[0];
 if (size % 2 === 0) {
@@ -311,6 +311,19 @@ console.log(stringEven1);
 if((size1 % 2) === 1){
   console.log(stringOdd1);
 }
+
+var board = "";
+for (var y = 0;y<size; y++) {
+  for (var x=0; x<size; x++){
+    if ((x+y)%2 == 0){
+      board+= " ";
+    } else {
+      board +="#";
+    }
+  }
+  board += "\n";
+}
+console.log(board);
 //Passing this string to console.log should show something like this:
 
 //  # # # #
